@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitchen Rush</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="game-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Restaurant Simulator</p>
+          <h1>Kitchen Rush</h1>
+        </div>
+        <button id="start-btn" class="primary-btn">Start Game</button>
+      </header>
+
+      <main class="game-layout">
+        <section class="panel ingredients-panel">
+          <h2>Ingredients</h2>
+          <div id="ingredient-list" class="ingredient-list"></div>
+        </section>
+
+        <section class="panel kitchen-panel">
+          <div class="status-row">
+            <div class="stat-box">
+              <span class="label">Score</span>
+              <strong id="score">0</strong>
+            </div>
+            <div class="stat-box">
+              <span class="label">Time</span>
+              <strong id="time">60</strong>
+            </div>
+            <div class="stat-box">
+              <span class="label">Combo</span>
+              <strong id="combo">x1</strong>
+            </div>
+          </div>
+
+          <div class="current-dish-box">
+            <h3>Current Dish</h3>
+            <div id="dish-preview" class="dish-preview">No ingredients yet</div>
+            <div class="actions-row">
+              <button id="clear-btn" class="secondary-btn">Clear</button>
+              <button id="serve-btn" class="accent-btn">Serve</button>
+            </div>
+          </div>
+
+          <div class="orders-box">
+            <h3>Orders</h3>
+            <div id="orders" class="orders"></div>
+          </div>
+        </section>
+
+        <aside class="panel info-panel">
+          <h2>How to Play</h2>
+          <ul>
+            <li>Click ingredients to build a dish.</li>
+            <li>Match the highlighted recipe on the order card.</li>
+            <li>Press Serve to deliver it.</li>
+            <li>Score combos by completing orders quickly.</li>
+          </ul>
+          <div class="legend">
+            <h3>Recipes</h3>
+            <div class="recipe-info">
+              <span>Cheeseburger</span>
+              <small>Bread • Patty • Cheese • Lettuce</small>
+            </div>
+            <div class="recipe-info">
+              <span>Garden Salad</span>
+              <small>Lettuce • Tomato • Onion</small>
+            </div>
+            <div class="recipe-info">
+              <span>Tomato Soup</span>
+              <small>Tomato • Water • Onion</small>
+            </div>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
